@@ -2,7 +2,7 @@
 Nano706
 This is assignment #2
 
-## Part 1
+## Part 1: AI for Modeling Molecular Reactions, Biological Systems, Mechanisms, its Regulation, Cell Growth
 
 #Part 1: Visualizing the data 
 
@@ -18,7 +18,7 @@ This is assignment #2
 ![P3](https://github.com/user-attachments/assets/7ff23415-d450-4355-99c7-2eba543a4327)
 
 
-## Part 2
+## Part 2: AI for Data Visualization Techniques in Computational Biology
 
 #Part 1: MNIST dataset 
 
