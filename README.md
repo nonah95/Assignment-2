@@ -37,6 +37,8 @@ Here’s a description of the data-splitting code:
 
 #Part 3: Decision Tree & Logistic Regression Model - SVM
 
+![P3](https://github.com/user-attachments/assets/7ff23415-d450-4355-99c7-2eba543a4327)
+
 The description of each model's training, prediction, and evaluation process:
 
 ### SVM Model
@@ -86,9 +88,6 @@ The description of each model's training, prediction, and evaluation process:
   accuracy_log_reg = accuracy_score(y_test, y_pred_log_reg)
   print(f"Accuracy of the Logistic Regression model: {accuracy_log_reg:.2f}")
   ```
-
-
-![P3](https://github.com/user-attachments/assets/7ff23415-d450-4355-99c7-2eba543a4327)
 
 
 ## Part 2: AI for Data Visualization Techniques in Computational Biology
