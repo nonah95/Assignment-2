@@ -22,6 +22,16 @@ visualize a wine quality dataset using a scatter plot to show the relationship b
 
 #Part 2: Split the Data 
 
+Here’s a description of the data-splitting code in bullet points for your README:
+
+- **Split the Data**: Use `train_test_split` to divide the dataset into training and testing sets, enabling model evaluation.
+- **Training and Testing Sets**: 
+  - `X_train`, `X_test`: Feature subsets for training and testing.
+  - `y_train`, `y_test`: Target subsets for training and testing.
+- **Parameters**:
+  - **`test_size=0.3`**: Allocates 30% of the data for testing.
+  - **`random_state=42`**: Ensures reproducibility by setting a fixed random seed.
+  
 ![P2](https://github.com/user-attachments/assets/0b96ac8d-6174-4a38-977e-e25c1353324d)
 
 
