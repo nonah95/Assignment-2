@@ -13,6 +13,10 @@ visualize a wine quality dataset using a scatter plot to show the relationship b
 - **Title and Labels**: `plt.title`, `plt.xlabel`, and `plt.ylabel` set the title and axis labels.
 - **Color Bar**: `plt.colorbar(...)` adds a color bar to indicate the quality scale.
 - **Display Plot**: `plt.show()` renders the plot.
+  
+- In the next section of this part: 
+- **Standardize Features**: Use `StandardScaler()` from `sklearn` to standardize the dataset, ensuring each feature has a mean of 0 and standard deviation of 1.
+- **Fit and Transform**: `scaler.fit_transform(X)` standardizes the features in `X`, outputting a scaled version stored in `X2`.
 
 ![P1](https://github.com/user-attachments/assets/be3947d1-3e06-4cd7-be0d-b722a552a444)
 
