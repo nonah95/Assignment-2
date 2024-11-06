@@ -158,4 +158,65 @@ Here’s a structured explanation of training and evaluating these classifiers:
 
 ![Nona Pic](https://github.com/user-attachments/assets/699d4ecf-8648-4ba5-808a-879e759c5ab1)
 
+Here's a step-by-step description to guide you in uploading, resizing, and detecting faces using the YOLO model in a Jupyter Notebook:
+
+### Step 1: Upload and Open the Image
+1. Define the image path.
+2. Open the image using PIL (Python Imaging Library).
+
+   ```python
+   from PIL import Image
+   import numpy as np
+   import matplotlib.pyplot as plt
+
+   # Path to your image
+   img_path = '/content/Nona.jpg'
+   image = Image.open(img_path)
+   ```
+
+### Step 2: Resize the Image
+1. Resize the image to specified dimensions (e.g., 888x688).
+   
+   ```python
+   # Resize the image
+   resized_image = image.resize((888, 688))
+   ```
+
+### Step 3: Convert Image to Array
+1. Convert the resized image to a NumPy array for processing with YOLO.
+
+   ```python
+   # Convert resized image to array
+   img_array = np.array(resized_image)
+   ```
+
+### Step 4: Perform Face Detection with YOLO
+1. Pass the image array through the YOLO model to detect faces.
+   
+   ```python
+   # Perform inference
+   results = model(img_array)
+   ```
+
+### Step 5: Display Results with Detections
+1. Use the model’s `show()` function to display the detections on the image.
+
+   ```python
+   # Show results with detections
+   results.show()
+   ```
+
+### Step 6: Optional - Display the Resized Image without Detections
+1. Display the resized image without detections for comparison.
+
+   ```python
+   # Display the resized image
+   plt.imshow(resized_image)
+   plt.axis('off')
+   plt.title('Resized Image')
+   plt.show()
+   ```
+
+These steps will allow you to upload, resize, and detect faces in your photo using the YOLO model. Make sure the YOLO model is correctly loaded as `model` before running these steps.
+
 
