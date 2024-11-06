@@ -8,15 +8,11 @@ This is assignment #2
 
 visualize a wine quality dataset using a scatter plot to show the relationship between two variables, "Alcohol" and "Malic Acid," and their association with wine quality. 
 
-  Figure Setup: plt.figure(figsize=(10, 6)) specifies the size of the plot.
-  
-  Scatter Plot: plt.scatter(...) plots "Alcohol" on the x-axis and "Malic Acid" on the y-axis, with colors     representing the target variable (wine quality).
-  
-  Title and Labels: plt.title, plt.xlabel, and plt.ylabel set the title and axis labels.
-  
-  Color Bar: plt.colorbar(...) adds a color bar to indicate the quality scale.
-  
-  Display Plot: plt.show() renders the plot.
+- **Figure Setup**: `plt.figure(figsize=(10, 6))` specifies the plot size.
+- **Scatter Plot**: `plt.scatter(...)` plots "Alcohol" on the x-axis and "Malic Acid" on the y-axis, with colors representing wine quality.
+- **Title and Labels**: `plt.title`, `plt.xlabel`, and `plt.ylabel` set the title and axis labels.
+- **Color Bar**: `plt.colorbar(...)` adds a color bar to indicate the quality scale.
+- **Display Plot**: `plt.show()` renders the plot.
 
 ![P1](https://github.com/user-attachments/assets/be3947d1-3e06-4cd7-be0d-b722a552a444)
 
