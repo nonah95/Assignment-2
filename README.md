@@ -6,7 +6,7 @@ This is assignment #2
 
 #Part 1: Visualizing the data 
 
-visualize a wine quality dataset using a scatter plot to show the relationship between two variables, "Alcohol" and "Malic Acid," and their association with wine quality. 
+I visualize a wine quality dataset using a scatter plot to show the relationship between two variables, "Alcohol" and "Malic Acid," and their association with wine quality. 
 
 - **Figure Setup**: `plt.figure(figsize=(10, 6))` specifies the plot size.
 - **Scatter Plot**: `plt.scatter(...)` plots "Alcohol" on the x-axis and "Malic Acid" on the y-axis, with colors representing wine quality.
@@ -22,7 +22,7 @@ visualize a wine quality dataset using a scatter plot to show the relationship b
 
 #Part 2: Split the Data 
 
-Here’s a description of the data-splitting code in bullet points for your README:
+Here’s a description of the data-splitting code:
 
 - **Split the Data**: Use `train_test_split` to divide the dataset into training and testing sets, enabling model evaluation.
 - **Training and Testing Sets**: 
