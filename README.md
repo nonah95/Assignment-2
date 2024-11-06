@@ -96,6 +96,64 @@ The description of each model's training, prediction, and evaluation process:
 
 ![MNIST](https://github.com/user-attachments/assets/851add21-43c9-4528-8ef7-640566385f97)
 
+Here’s a structured explanation of training and evaluating these classifiers:
+
+### Random Forest Classifier
+- **Train the Random Forest Classifier**: Instantiate `RandomForestClassifier` with 100 trees and a random seed, then train it on the training data.
+  ```python
+  rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+  rf_classifier.fit(X_train, y_train)
+  ```
+- **Make Predictions**: Use the trained Random Forest model to predict the test set labels.
+  ```python
+  y_pred_rf = rf_classifier.predict(X_test)
+  ```
+- **Evaluate the Model**: Calculate and print the accuracy of the Random Forest model on the test set.
+  ```python
+  accuracy_rf = accuracy_score(y_test, y_pred_rf)
+  print(f"Random Forest Accuracy: {accuracy_rf * 100:.2f}%")
+  ```
+
+### Logistic Regression Classifier
+- **Train the Logistic Regression Classifier**: Initialize `LogisticRegression` with a maximum iteration of 1000 and a fixed random seed, then fit it to the training data.
+  ```python
+  logistic_classifier = LogisticRegression(max_iter=1000, random_state=42)
+  logistic_classifier.fit(X_train_scaled, y_train)
+  ```
+- **Make Predictions**: Use the trained Logistic Regression model to predict the test set labels.
+  ```python
+  y_pred_logistic = logistic_classifier.predict(X_test_scaled)
+  ```
+- **Evaluate the Model**: Calculate and print the accuracy of the Logistic Regression model on the test set.
+  ```python
+  accuracy_logistic = accuracy_score(y_test, y_pred_logistic)
+  print(f"Logistic Regression Accuracy: {accuracy_logistic * 100:.2f}%")
+  ```
+
+### MLP (Neural Network) Classifier
+- **Train the MLP Classifier**: Initialize `MLPClassifier` with 100 hidden units, a maximum iteration of 500, and a fixed random seed, then fit it to the training data.
+  ```python
+  mlp = MLPClassifier(hidden_layer_sizes=(100,), max_iter=500, random_state=42)
+  mlp.fit(X_train_scaled, y_train)
+  ```
+- **Make Predictions**: Use the trained MLP model to predict the test set labels.
+  ```python
+  y_pred_mlp = mlp.predict(X_test_scaled)
+  ```
+- **Evaluate the Model**: Calculate and print the accuracy of the MLP model on the test set.
+  ```python
+  accuracy_mlp = accuracy_score(y_test, y_pred_mlp)
+  print(f"MLP Accuracy: {accuracy_mlp * 100:.2f}%")
+  ```
+
+### Summary of Accuracy Results
+- Print the accuracy results for each model for easy comparison.
+  ```python
+  print(f"Logistic Regression Accuracy: {accuracy_logistic * 100:.2f}%")
+  print(f"Random Forest Accuracy: {accuracy_rf * 100:.2f}%")
+  print(f"MLP Accuracy: {accuracy_mlp * 100:.2f}%")
+  ```
+
 #Part 2: Yolo Model for my Picture 
 
 ![Nona Pic](https://github.com/user-attachments/assets/699d4ecf-8648-4ba5-808a-879e759c5ab1)
