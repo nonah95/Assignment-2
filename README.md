@@ -37,6 +37,57 @@ Here’s a description of the data-splitting code:
 
 #Part 3: Decision Tree & Logistic Regression Model - SVM
 
+The description of each model's training, prediction, and evaluation process:
+
+### SVM Model
+- **Train the SVM Model**: Instantiate `SVC` with a linear kernel, and train it on the training data.
+  ```python
+  svm = SVC(kernel='linear')
+  svm.fit(X_train, y_train)
+  ```
+- **Make Predictions**: Use the trained SVM model to predict the test set labels.
+  ```python
+  y_pred = svm.predict(X_test)
+  ```
+- **Evaluate the Model**: Calculate the accuracy of the SVM model on the test set.
+  ```python
+  accuracy_svm = accuracy_score(y_test, y_pred)
+  print(f"Accuracy of the SVM model: {accuracy_svm:.2f}")
+  ```
+
+### Decision Tree Model
+- **Train the Decision Tree Model**: Instantiate `DecisionTreeClassifier` and fit it to the training data.
+  ```python
+  tree = DecisionTreeClassifier()
+  tree.fit(X_train, y_train)
+  ```
+- **Make Predictions**: Use the trained Decision Tree model to predict the test set labels.
+  ```python
+  y_pred_tree = tree.predict(X_test)
+  ```
+- **Evaluate the Model**: Calculate the accuracy of the Decision Tree model on the test set.
+  ```python
+  accuracy_tree = accuracy_score(y_test, y_pred_tree)
+  print(f"Accuracy of the Decision Tree model: {accuracy_tree:.2f}")
+  ```
+
+### Logistic Regression Model
+- **Train the Logistic Regression Model**: Instantiate `LogisticRegression` with a specified maximum iteration count and train it on the data.
+  ```python
+  log_reg = LogisticRegression(max_iter=1000)
+  log_reg.fit(X_train, y_train)
+  ```
+- **Make Predictions**: Use the trained Logistic Regression model to predict the test set labels.
+  ```python
+  y_pred_log_reg = log_reg.predict(X_test)
+  ```
+- **Evaluate the Model**: Calculate the accuracy of the Logistic Regression model on the test set.
+  ```python
+  accuracy_log_reg = accuracy_score(y_test, y_pred_log_reg)
+  print(f"Accuracy of the Logistic Regression model: {accuracy_log_reg:.2f}")
+  ```
+
+
 ![P3](https://github.com/user-attachments/assets/7ff23415-d450-4355-99c7-2eba543a4327)
 
 
