@@ -1,4 +1,4 @@
-# Assignment-2
+# Project 1
 Nano706
 This is assignment #2
 
